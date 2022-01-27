@@ -71,6 +71,7 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 .button1{
     background-color: black;
@@ -80,8 +81,8 @@ h1{
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    height: 5%; 
-    width: 5%
+    height: 15%; 
+    width: 15%
   }
 
   .button2{
@@ -92,8 +93,8 @@ h1{
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    height: 3%;
-    width: 6%
+    height: 15%;
+    width: 15%
   }
 
   .intro{
@@ -102,26 +103,26 @@ h1{
   
   .intro p{
     font-size: 2rem;
-    padding: 50px 100px;
+    padding: 2% 2%;
   }
 
   .img{
     margin: 2% auto;
+    padding: 2%;
   }
 
   .examples{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     }
 
- .flex-image{
+.flex-image{
    display: flex;
    align-items: center;
    height: 400px;
    width: 15%;
-   align-content: stretch;
  }
 
  .paragraph{
@@ -140,3 +141,97 @@ h1{
   flex-direction: row;
   justify-content: center;
  }
+
+ @media(max-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button1{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 15%; 
+    width: 15%
+  }
+
+  .button2{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 25%;
+    width: 25%
+  }
+
+  .examples{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    .flex-image{
+      display: flex;
+      align-items: center;
+      height: 300px;
+      width: 45%;
+      margin-top: 10%;
+      margin-bottom: 20%;
+    }
+ }
+  
+  @media(max-width: 500px) {
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .button1{
+      background-color: black;
+      border: 2px solid black;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      height: 25%; 
+      width: 25%
+    }
+  
+    .button2{
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      height: 25%;
+      width: 25%
+    }
+  
+    .examples{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      }
+
+      .flex-image{
+        display: flex;
+        align-items: center;
+        height: 50%%;
+        width: 45%;
+      }
+    }
